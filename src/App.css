@@ -36,10 +36,14 @@ header {
   border-radius: 0 0 10px 10px;
 }
 
+.todoList li:only-child {
+  border-radius: 10px;
+}
 
 .isFinished {
   background-color: green;
   color: white;
+  border-radius: 10px;
 }
 
 .isDelayed {
