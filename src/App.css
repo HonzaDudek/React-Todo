@@ -1,26 +1,75 @@
-.App {
+/* Default styles */
+body {
+  width: 100%;
+  display: flex;
+}
+
+header {
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  width: 50%;
+  margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.todoList {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 0;
+  -webkit-box-shadow: 10px 10px 29px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 29px -4px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 29px -4px rgba(0,0,0,0.75);
+}
+
+.todoList li {
+  list-style-type: none;
+}
+
+.todoList li:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.todoList li:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+
+.isFinished {
+  background-color: green;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.isDelayed {
+  background-color: red;
+  color: white;
+}
+
+.buttons__filter {
+  width: 75%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.buttons__filter button {
+  height: 50px;
+  width: 150px;
+  margin: 0 20px;
+  border-radius: 10px;
+  border: 1px solid green;
+  background: white;
+  font-weight: bold;
+}
+
+.buttons__filter button:hover {
+  cursor: pointer;
+  border: 1px solid green;
+  color: white;
+  background: green;
 }
 
 @keyframes App-logo-spin {

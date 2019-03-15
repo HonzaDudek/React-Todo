@@ -1,0 +1,41 @@
+form {
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+form button,
+form input {
+    height: 30px;
+    margin: 10px auto;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+form button {
+    height: 50px;
+    width: 150px;
+    background: white;
+    color: green;
+    font-weight: bold;
+    border: 1px solid green;
+}
+
+form button:hover {
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: 1px solid green;
+}
+
+#todoDescription {
+    width: 60%;
+}

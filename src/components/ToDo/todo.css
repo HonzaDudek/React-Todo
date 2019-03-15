@@ -1,0 +1,25 @@
+.todo__item {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid darkgray;
+}
+
+.todo__item--id {
+    width: 10%;
+    text-align: center;
+}
+
+.todo__item--task {
+    width: 55%;
+}
+
+.todo__item--dueDate {
+    width: 25%;
+}
+
+.todo__item--id {
+    width: 10%;
+}
